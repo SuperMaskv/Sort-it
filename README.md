@@ -1,4 +1,5 @@
 # Sort it!
+![](intro.gif)
 ## Install
 ```bash
 git clone https://github.com/SuperMaskv/Sort-it.git
