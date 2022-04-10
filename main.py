@@ -25,11 +25,16 @@ def sort_file(filename, params):
     move file to a certain directory
     """
     # check if dest path is exists
+    params = os.path.join(params, f'{datetime.datetime.today().strftime("%Y-%m")}')
+    sort_it_log('INFO', f'params: {params}')
     Path(params).mkdir(parents=True, exist_ok=True)
     for f in filename:
         pure_filename = f.split('\\')[-1]
         destination = os.path.join(params, pure_filename)
-        shutil.move(f, destination)
+        if SORTING_STRATEGY == 'move':
+            shutil.move(f, destination)
+        else:
+            shutil.copy(f, destination)
         sort_it_log('INFO', f'selected file\'s name: {pure_filename}')
         sort_it_log('INFO', f'destination: {destination}')
 
@@ -59,4 +64,4 @@ def reinstall():
 
 
 if __name__ == '__main__':
-    print(os.path.dirname(os.path.realpath(__file__)))
+    reinstall()

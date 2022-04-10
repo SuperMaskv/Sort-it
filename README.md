@@ -7,4 +7,4 @@ pip install -r requirements.txt
 python main.py
 ```
 ## Roadmap
-- [] sort by 'yyyy-MM'
+- [X] sort by 'yyyy-MM'

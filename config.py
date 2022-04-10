@@ -1,10 +1,11 @@
 # FILE_TYPES includes submenu's name and the file repo location
 FILE_TYPES = {
-    'software': r'd:\software',
-    'document': r'd:\document'
+    'software': 'd:\\software',
+    'document': 'd:\\document'
 }
 # release mode will disable log
 RUN_MODE = 'release'
-import os
+# move or copy
+SORTING_STRATEGY = 'move'
 
-LOG_FILE_LOCATION = f'{os.path.dirname(os.path.realpath(__file__))}\\sort-it.log'
+LOG_FILE_LOCATION = 'd:\\sort-it.log'
