@@ -1,4 +1,4 @@
-# FILE_TYPES includes submenu's name and the file repo lacation
+# FILE_TYPES includes submenu's name and the file repo location
 FILE_TYPES = {
     'software': r'd:\software',
     'document': r'd:\document'
