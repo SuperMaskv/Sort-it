@@ -9,3 +9,4 @@ python main.py
 ```
 ## Roadmap
 - [X] sort by 'yyyy-MM'
+- [ ] process bar
